@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/header.ejs') %>
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../partials/navbar.ejs') %>
+    <div class='slider'>
+        <div class='slide1'>
+        <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+          <p class="font-weight-bold slider_text">Making our client happier</p>
+          <h1 class="font-weight-bold slider_text1">Nothing is impossible</h1>
+      </div>
+      </div>
+      </div>
+      </div>
+        <div class='slide2'> <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+          <p class="font-weight-bold slider_text">Making our client happier</p>
+          <h1 class="font-weight-bold slider_text1">Best Services For<br> your family</h1>
+      </div>
+      </div>
+      </div></div>
+        <div class='slide3'> <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+          <p class="font-weight-bold slider_text">Making our client happier</p>
+          <h1 class="font-weight-bold slider_text1">We are the current <br>specialist</h1>
+      </div>
+      </div>
+      </div></div>
+
+      <% if(msg !== null){ %>
+        <div class="message">
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="card">
+                    <div class="text-right cross mr-3 mt-2"> <i class="fa fa-times"></i> </div>
+                        <div class="success-animation" style="text-align: center;">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
+                            <br><br>
+                        <h4>CONGRATULATIONS!</h4>
+                       <p> <%= msg %> </p> <button class="btn btn-primary">CONTINUE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#myModal').modal({ show: true })
+    </script>
+    <%  } %>           
+</div>
+
+    
+      <%- include('../partials/login-signup.ejs') %>
+
+      <div class="container form_12">
+      <div class="order-form">
+          <div class="order-form__title" id="js-toggle-orderform"> <i class="tt-arrow down"></i> Request Service Today</div>
+          <div class="order-form__content form-order">
+              <div role="form" class="wpcf7" id="wpcf7-f25-p1426-o1" dir="ltr" lang="en-US">
+                  <div class="screen-reader-response">
+                      <p role="status" aria-live="polite" aria-atomic="true"></p>
+                      <ul></ul>
+                  </div>
+                  
+                  <form action="/" method="POST" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                      <div style="display: none;">
+                          <input type="hidden" name="_wpcf7" value="25">
+                          <input type="hidden" name="_wpcf7_version" value="5.3.2">
+                          <input type="hidden" name="_wpcf7_locale" value="en_US">
+                          <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f25-p1426-o1">
+                          <input type="hidden" name="_wpcf7_container_post" value="1426">
+                          <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                      </div>
+                      <div class="form-group"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Your name"></span>
+                      </div>
+                      <div class="form-group"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Your e-mail"></span>
+                      </div>
+                      <div class="form-group"><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Your phone"></span>
+                      </div>
+                      <div class="form-group"><span class="icon-1 icon-747993"></span><span class="wpcf7-form-control-wrap your-date"><input type="date" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required datepicker-1 form-control" aria-required="true" aria-invalid="false" placeholder="Date"></span>
+                          <div class="form-group__icon icon-calendar"></div>
+                      </div>
+                      <div class="form-group">
+                          <button type="submit" class="btn  btn_members" class="nav-link" href="#">Get Serives</button>
+                      </div>
+                      <div class="wpcf7-response-output" aria-hidden="true"></div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+
+
+      <!-- ===================================================================================================== -->
+
+      <div class="ani">
+        <div class="tt-slideinfo-wrapper slick-type01">
+            <div class="tt-slideinfo wide short">
+                <div class="tt-item__bg">
+                    <div data-bg="slideinfo-01.jpg" class="tt-item__bg-img lazyloaded" style="background-image: url(&quot;/images/slideinfo-01.jpg&quot;);"></div>
+                    <div class="tt-item__bg-top"></div>
+                </div>
+                <div class="tt-item__content">
+                    <div class="tt-item__title"><span class="tt-icon">
+        <img src="/images/slideinfo-marker.png" class=" ls-is-cached lazyloaded" data-src="/images/slideinfo-marker.png" alt=""></span>
+                        <span class="tt-text">Commercial</span>
+                    </div>
+                    <div class="tt-item__description text_11">We offer the highest level of responsiveness and reliability, including on-line job management and reporting. Our highly experienced contractors across the nation ensure that your premises are always maintained and compliant.</div>
+                    <div class="tt-item__btn click_1" style="cursor:pointer;">
+        <a >+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tt-slideinfo wide active">
+                <div class="tt-item__bg">
+                    <div data-bg="slideinfo-02.jpg" class="tt-item__bg-img lazyloaded" style="background-image: url(&quot;/images/slideinfo-02.jpg&quot;);"></div>
+                    <div class="tt-item__bg-top"></div>
+                </div>
+                <div class="tt-item__content">
+                    <div class="tt-item__title"><span class="tt-icon"><img src="/images/slideinfo-marker.png" class=" ls-is-cached lazyloaded" data-src="slideinfo-marker.png" alt=""></span><span class="tt-text">Industrial</span>
+                    </div>
+                    <div class="tt-item__description text_12">We offer the highest level of responsiveness and reliability, including on-line job management and reporting. Our highly experienced contractors across the nation ensure that your premises are always maintained and compliant.</div>
+                    <div class="tt-item__btn click_2" style="cursor:pointer;"> <a >+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tt-slideinfo wide short">
+                <div class="tt-item__bg">
+                    <div data-bg="slideinfo-03.jpg" class="tt-item__bg-img lazyloaded" style="background-image: url(&quot;/images/slideinfo-03.jpg&quot;);"></div>
+                    <div class="tt-item__bg-top"></div>
+                </div>
+                <div class="tt-item__content">
+                    <div class="tt-item__title"><span class="tt-icon"><img src="/images/slideinfo-marker.png" class=" ls-is-cached lazyloaded" data-src="slideinfo-marker.png" alt=""></span><span class="tt-text">Residential</span>
+                    </div>
+                    <div class="tt-item__description text_13">We offer the highest level of responsiveness and reliability, including on-line job management and reporting. Our highly experienced contractors across the nation ensure that your premises are always maintained and compliant.</div>
+                    <div class="tt-item__btn click_3" style="cursor:pointer;"> <a >+</a>
+                
+                    </div>
+        
+                
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =============================================================================================================== -->
+
+      <%- include('../partials/footer.ejs') %>
+          <script>
+      
+      
+      /* Please ❤ this if you like it! */
+      
+      
+      (function($) { "use strict";
+      
+          $(function() {
+              var header = $(".start-style");
+              $(window).scroll(function() {    
+                  var scroll = $(window).scrollTop();
+              
+                  if (scroll >= 10) {
+                      header.removeClass('start-style').addClass("scroll-on");
+                  } else {
+                      header.removeClass("scroll-on").addClass('start-style');
+                  }
+              });
+          });		
+              
+          //Animation
+          
+        })(jQuery); 
+        
+        
+        $(document).ready(function(){
+        $(".order-form").click(function(){
+          if ($(window).width() <= 767) {
+        $(".form-order").toggle("slow");
+        }});
+         });
+
+
+         $(document).ready(function(){
+            $(".click_1").click(function(){
+            $(".text_11").toggle();
+                $(".text_12").hide();
+                $(".text_13").hide();
+            });
+            
+            $(".click_2").click(function(){
+            $(".text_12").toggle();
+                $(".text_11").hide();
+                $(".text_13").hide();
+            });
+
+            $(".click_3").click(function(){
+            $(".text_13").toggle();
+            $(".text_12").hide();
+                $(".text_11").hide();
+            });
+            });
+      </script>
+</body>
+</html>

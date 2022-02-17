@@ -1,0 +1,158 @@
+a{
+    text-decoration:none !important;
+    }
+    
+    
+    .ser{
+        background:url('../images/breadcrumb_bg.jpg');
+        padding-top:50px;
+        padding-bottom:50px;
+        margin-top: 89px;
+        background-size:cover;
+    }
+    
+    
+    
+    .ser p , .ser p a{
+    color:#bbbdc3;
+    }
+    
+    .sec_1 img{
+    width: 110%;
+    height: auto;
+    }
+    
+    .ser_3{
+    background:#fff;
+    padding-left:20px;
+    margin-left: -87px;
+    margin-top: 32px;
+    padding-top: 28px;
+    padding-bottom: 49px;
+    padding-left: 55px;
+    }
+    
+    .top_12{
+    margin-top:100px !important;
+    }
+    
+    @media (max-width: 767px) {
+    .ser_3{
+    background:#fff;
+    padding-left:0px;
+    margin-left: 0px;
+    margin-top:30px;
+    padding-top:0px;
+    padding-bottom: 1px;
+    padding-left:0px;
+    }
+    }
+    
+    
+    .portfolio-menu{
+        text-align:center;
+    }
+    .portfolio-menu ul li{
+        display:inline-block;
+        margin:0;
+        list-style:none;
+        background-color:transparent !important;
+    border:none;
+    color:#303442;
+        padding:10px 15px;
+        cursor:pointer;
+    font-weight:bold;
+    }
+    
+    .btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):active, .show > .btn-outline-dark.dropdown-toggle {
+        color: #f47629;
+        border-color: none;
+    }
+    
+    .portfolio-menu ul li:hover{
+    color:#f47629 !important;
+    }
+    
+    .portfolio-item{
+        /*width:100%;*/
+    }
+    .portfolio-item .item{
+        /*width:303px;*/
+        float:left;
+        margin-bottom:10px;
+    }
+    
+    .text_dark{
+    color:#303442;
+    }
+    
+    .text_lightdark{
+    color:#937b7b;
+    }
+    
+    .tab_text{
+    padding: 23px;
+    margin-top: -103px;
+    background: #fff;
+    z-index: 999;
+    position: relative;
+    width: 92%;
+    }
+    
+    
+        .mor a{
+        color:#000 !important;
+        font-weight:bold;
+            transition:.5s ease-out;
+        }
+        
+        .mor i{
+        position: absolute;
+    margin-top: 8px;
+    margin-left: 15px;
+    font-size:14px;
+    color:#303442;
+        }
+        
+    .mor a:hover{
+    color:#f47629 !important;
+        transition:.5s ease-out;
+        }
+
+        .btn_members{
+    background:#f47629;
+    color:#fff !important;
+    padding-left: 27px !important;
+    padding-right: 27px !important;
+    }
+    
+    .btn_members:hover{
+    background:#fff !important;
+    border:1px solid #f47629 !important;
+    color:#f47629 !important;
+    }
+    
+    ul.tt-list01 {
+        list-style: none !important;
+        line-height:30px;
+    }
+    
+    .list_ser{
+    margin-top:80px;
+    }
+    
+    .lil li:before{
+    
+    content: url('../images/tick-sign.svg');
+    position: absolute;
+    width: 17px;
+    display: block;
+    margin-left: -27px;
+    margin-top: 10px;
+    }
+    
+    
+   
+    
+   
+    

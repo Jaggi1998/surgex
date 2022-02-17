@@ -1,0 +1,134 @@
+
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<div class="navigation-wrap changeHeader  fixed-top start-header  start-style">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                
+                    <a class="navbar-brand" href="https://front.codes/" target="_blank"></a>	
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tt-nav" aria-controls="tt-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="tt-nav">
+                        <ul class="navbar-nav ml-auto py-4 py-md-0">
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+        <a class="nav-link" href="/" ><span class="electric-btn"><span class="text">Home</span>
+        <div class="mask"><span>Home</span></div>
+<div class="mask"><span>Home</span></div>
+<div class="mask"><span>Home</span></div>
+<div class="mask"><span>Home</span></div>
+<div class="mask"><span>Home</span></div>
+<div class="mask"><span>Home</span></div></span></a>
+                            </li>
+                            
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="/services"><span class="electric-btn"><span class="text">servies</span>
+<div class="mask"><span>services</span></div>
+<div class="mask"><span>services</span></div>
+<div class="mask"><span>servies</span></div>
+<div class="mask"><span>servies</span></div>
+<div class="mask"><span>servies</span></div>
+<div class="mask"><span>servies</span></div></span></a>
+                            </li>
+                            
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="#"><span class="electric-btn"><span class="text">Blog</span>
+<div class="mask"><span>Blog</span></div>
+<div class="mask"><span>Blog</span></div>
+<div class="mask"><span>Blog</span></div>
+<div class="mask"><span>Blog</span></div>
+<div class="mask"><span>Blog</span></div>
+<div class="mask"><span>Blog</span></div></span></a>
+                            </li>
+                        
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="#"><span class="electric-btn disabled"><span class="text">Shop</span>
+<div class="mask"><span>Shop</span></div>
+<div class="mask"><span>Shop</span></div>
+<div class="mask"><span>Shop</span></div>
+<div class="mask"><span>Shop</span></div>
+<div class="mask"><span>Shop</span></div>
+<div class="mask"><span>Shop</span></div></span></a>
+                            </li>
+                            
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="nav-link" href="/faq"><span class="electric-btn"><span class="electric-btn"><span class="text">Faq</span>
+<div class="mask"><span>Faq</span></div>
+<div class="mask"><span>Faq</span></div>
+<div class="mask"><span>Faq</span></div>
+<div class="mask"><span>Faq</span></div>
+<div class="mask"><span>Faq</span></div>
+<div class="mask"><span>Faq</span></div></span></a>
+                            </li>
+                            
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+<a class="nav-link" href="/contact">
+<span class="electric-btn"><span class="text">Contact</span>
+<div class="mask"><span>Contact</span></div>
+<div class="mask"><span>Contact</span></div>
+<div class="mask"><span>Contact</span></div>
+<div class="mask"><span>Contact</span></div>
+<div class="mask"><span>Contact</span></div>
+<div class="mask"><span>Contact</span></div></span>
+</a>
+</li>
+ <% if(!isLogin) {%>
+     
+     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+         
+         <a class="nav-link" href="#" data-toggle="modal" data-target="#BuyModalCenter"><span class="electric-btn"><span class="text">login</span>
+     <div class="mask"><span>login</span></div>
+     <div class="mask"><span>login</span></div>
+     <div class="mask"><span>login</span></div>
+     <div class="mask"><span>login</span></div>
+     <div class="mask"><span>login</span></div>
+     <div class="mask"><span>login</span></div></span></a>
+     </li>
+     
+     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+         <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter"><span class="electric-btn"><span class="text">signup</span>
+     <div class="mask"><span>signup</span></div>
+     <div class="mask"><span>signup</span></div>
+     <div class="mask"><span>signup</span></div>
+     <div class="mask"><span>signup</span></div>
+     <div class="mask"><span>signup</span></div>
+     <div class="mask"><span>signup</span></div></span></a>
+     </li>
+<%} else {%>
+    
+    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+        <a class="nav-link" href="/logout"><span class="electric-btn"><span class="text">logout</span>
+    <div class="mask"><span>logout</span></div>
+    <div class="mask"><span>logout</span></div>
+    <div class="mask"><span>logout</span></div>
+    <div class="mask"><span>logout</span></div>
+    <div class="mask"><span>logout</span></div>
+    <div class="mask"><span>logout</span></div></span></a>
+    </li>  
+<%}%>
+                
+
+                
+                <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button> -->
+  
+                <!-- Modal -->
+                
+                            
+                        <li class=" pl-4 pl-md-0 ml-0 ml-md-4">
+                                <a class="btn  btn_members" class="nav-link" href="#">Appointment</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    
+                </nav>		
+            </div>
+        </div>
+    </div>
+</div>

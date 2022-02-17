@@ -1,0 +1,148 @@
+.btn_members_1{
+    background:#303442;
+    color:#fff !important;
+    padding-left: 27px !important;
+    padding-right: 27px !important;
+    padding: 11px;
+    }
+    
+    .btn_members_1:hover{
+    background:rgb(180, 179, 179) !important;
+    border:1px solid #f47629 !important;
+    color:#f47629 !important;
+    }
+
+ .f-form {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    -ms-flex-wrap:nowrap;
+    flex-wrap:nowrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -ms-flex-line-pack:center;
+    align-content:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    background-color:#f47629;
+    color:#fff;
+    padding:30px;
+    overflow:hidden;
+    margin-top: 60px
+}
+.f-form>*:not(:first-child) {
+    margin-left:24px
+}
+.f-form .f-form__label {
+    font-size:24px;
+    font-family:"Poppins",
+    sans-serif;
+    font-weight:600;
+    padding-right:13px
+}
+.f-form .f-form__input {
+    width:33%
+}
+.f-form .f-form__input .form-control {
+    background:#fff;
+    color:#888;
+    border:1px solid #fff;
+    font-size:16px;
+    line-height:19px;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    outline:none;
+    -webkit-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+    border-radius:4px;
+    width:100%;
+    height:48px;
+    padding:6px 12px 6px 19px;
+    font-family:"Roboto",
+    sans-serif
+}
+.f-form .f-form__btn .tt-btn[class^="icon-"] {
+    margin-right:10px
+}
+@media (min-width: 1025px) {
+    .f-form {
+        -webkit-transform:translateY(-50%);
+        transform:translateY(-50%)
+    }
+}
+@media (max-width: 1229.98px) {
+    .f-form .f-form__label {
+        font-size:22px;
+        padding-right:3px
+    }
+}
+@media (max-width: 1024.98px) {
+    .f-form {
+        padding:15px
+    }
+    .f-form .f-form__label {
+        font-size:20px;
+        padding-right:0
+    }
+    .f-form .f-form__input .form-control {
+        height:35px;
+        font-size:15px;
+        padding:6px 8px 6px 8px
+    }
+    .f-form .f-form__btn .tt-btn {
+        height:35px
+    }
+    .f-form .f-form__btn .tt-btn[class^="icon-"] {
+        margin-right:10px
+    }
+}
+ul.tt-list01 {
+    list-style: none !important;
+    line-height:30px;
+}
+
+.lil li:before{
+    
+    content: url('../images/tick-sign.svg');
+    position: absolute;
+    width: 17px;
+    display: block;
+    margin-left: -27px;
+    margin-top: 10px;
+    }
+
+.footer_main ul li{
+    font-weight:bold;
+    }
+    
+    .footer_main{
+    background:#303442;
+    padding-top: 124px;
+    padding-bottom:50px;
+    margin-top: 60px;
+    }
+
+    .footer_bo{
+        width: 80%;
+        position: absolute;
+        margin-left: 9%;
+        
+        }
+        
+        @media (max-width:767px) {
+            #tt-footer {
+                margin-top:58px
+            }
+            .footer_bo{
+        width:100%;
+        margin-left: 0%;
+        
+        }
+        }
+        

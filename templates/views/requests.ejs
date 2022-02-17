@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="mt-0 header-title mb-4">Latest Trasaction</h4>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">(#) Id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">email</th>
+                                <th scope="col">phone No.</th>
+                                <th scope="col">date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <% if (request.length > 0) { %>
+                                    <% request.map(list => { %>
+                                        <tr>
+                                          <th scope="row"><%= list._id %></th>
+                                          <td>
+                                              <div>
+                                                  <img src="public/assets/images/users/user-2.jpg" alt="" class="thumb-md rounded-circle mr-2"> <%= list.name %>
+                                              </div>
+                                          </td>
+                                          <td><%= list.email %></td>
+                                          <td><%= list.phone %></td>
+                                          <td><span class="badge badge-success"><%= list.date %></span></td>
+                                          <td>
+                                              <div>
+                                                  <a href="/requests/<%= list._id %>" class="btn btn-primary btn-sm">Delete</a>
+                                              </div>
+                                          </td>
+                                        </tr>
+                                        <% }) %>
+                               <% } else { %>
+                                <h2>No recorde found</h2>
+                              <% } %>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="mt-0 header-title mb-4">Chat</h4>
+                    <div class="chat-conversation">
+                        <ul class="conversation-list slimscroll" style="max-height: 400px;">
+                            <li class="clearfix">
+                                <div class="chat-avatar">
+                                    <img src="public/assets/images/users/user-2.jpg" alt="male">
+                                    <span class="time">10:00</span>
+                                </div>
+                                <div class="conversation-text">
+                                    <div class="ctext-wrap">
+                                        <span class="user-name">John Deo</span>
+                                        <p>
+                                            Hello!
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix odd">
+                                <div class="chat-avatar">
+                                    <img src="public/assets/images/users/user-3.jpg" alt="Female">
+                                    <span class="time">10:01</span>
+                                </div>
+                                <div class="conversation-text">
+                                    <div class="ctext-wrap">
+                                        <span class="user-name">Smith</span>
+                                        <p>
+                                            Hi, How are you? What about our next meeting?
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="chat-avatar">
+                                    <img src="public/assets/images/users/user-2.jpg" alt="male">
+                                    <span class="time">10:04</span>
+                                </div>
+                                <div class="conversation-text">
+                                    <div class="ctext-wrap">
+                                        <span class="user-name">John Deo</span>
+                                        <p>
+                                            Yeah everything is fine
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix odd">
+                                <div class="chat-avatar">
+                                    <img src="public/assets/images/users/user-3.jpg" alt="male">
+                                    <span class="time">10:05</span>
+                                </div>
+                                <div class="conversation-text">
+                                    <div class="ctext-wrap">
+                                        <span class="user-name">Smith</span>
+                                        <p>
+                                            Wow that's great
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix odd">
+                                <div class="chat-avatar">
+                                    <img src="public/assets/images/users/user-3.jpg" alt="male">
+                                    <span class="time">10:08</span>
+                                </div>
+                                <div class="conversation-text">
+                                    <div class="ctext-wrap">
+                                        <span class="user-name mb-2">Smith</span>
+                                        
+                                        <img src="public/assets/images/small/img-1.jpg" alt="" height="48px" class="rounded mr-2">
+                                        <img src="public/assets/images/small/img-2.jpg" alt="" height="48px" class="rounded">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-sm-9 col-8 chat-inputbar">
+                                <input type="text" class="form-control chat-input" placeholder="Enter your text">
+                            </div>
+                            <div class="col-sm-3 col-4 chat-send">
+                                <button type="submit" class="btn btn-success btn-block">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
